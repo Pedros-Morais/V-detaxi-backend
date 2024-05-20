@@ -34,3 +34,38 @@ Utilizei Node.js com Express pela sua simplicidade e eficiência na criação de
    ```bash
    npm test
    ```
+ ## EndPoints
+
+ ### Criar Corrida
+
+ - **URL: /api/corrida**
+ - **METHOD: POST**
+ - **Body** 
+ ```json
+ {
+  "usuario_id": 1,
+  "origem": "A",
+  "destino": "B"
+}
+```
+sucess
+```json
+{
+  "id": 1
+}
+```
+### Cancelar Corrida
+
+ - **URL: /api/corrida/:id/cancelar**
+ - **METHOD: PATCH**
+ - **Parâmetros da URL:** id: O ID da corrida a ser cancelada.
+ - **Sucess** 
+ ```json
+ {
+  "message": "Ride canceled"
+}
+```
+
+
+
+ 
